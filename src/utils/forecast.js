@@ -9,8 +9,11 @@ request({url,json:true},(error, { body })=>{
 
     }else{
         //it will dsiplay the current weather forecast for that location
-    const data =body.current.weather_descriptions+'. It is currently '+body.current.temperature+' degrees out. It feels like '+body.current.feelslike +' degrees out.'
-    callback(undefined,data)
+        console.log(body.current)
+    
+    callback(undefined,
+        body.current.weather_descriptions[0]+'. It is currently '+ body.current.temperature +' degrees out. It feels like '+
+        body.current.feelslike +' degrees out. The humidity is ' + body.current.humidity + "%.")
     }
 })
 
