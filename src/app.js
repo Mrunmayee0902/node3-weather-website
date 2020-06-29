@@ -100,34 +100,3 @@ app.listen(port,()=>{
 
 
 
-
-//__dirname:directory name,__filename:file's name(path is a core node module)
-//console.log(__dirname)
-//console.log(path.join(__dirname,'../public'))
-//console.log(__filename)
-//express is a single function as opposed to something like an object and we caall it to create new express application
-//we can serve the public directory by app.use() which is a way to customize your server
-//const app stores our express application,express() (without arguments) is used to generate the application
-//req incoming request,res to access methods hello express will be displayed on the browser
-// app.get('',(req,res)=>{
-//     //res.send('Hello Express!')
-//     res.send('<h1>Weather</h1>')
-// })
-// app.get('/help',(req,res)=>{
-//     //res.send('Help page!')
-//     res.send([{
-//         name:'Andrew'
-//     },{
-//         name:'Sarah'
-//     }])
-
-// })
-// app.get('/about',(req,res)=>{
-//     res.send('<h1>About</h1>')
-// })
-
-
-//app.com,app.com/help,app.com/about app.com is the domain runs on single express server on multiple routes
-//app.get() let's us configure what a server should dowhen someone tries to get the resource at a specific URL
-//to start the server up we use app.listen()(3000 is the port we chose to listen on)
-//express.static is a function that takes path to the folder we want to serve up
